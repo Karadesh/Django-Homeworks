@@ -1,0 +1,19 @@
+[0;1;32m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2021-03-18 14:47:42 MSK; 9s ago
+   Main PID: 17227 (gunicorn)
+      Tasks: 4 (limit: 1158)
+     Memory: 101.5M
+     CGroup: /system.slice/gunicorn.service
+             ├─17227 /home/django/venv/bin/python3 /home/django/venv/bin/gunicorn --access-logfile - --workers 3 --env DJANGO_PRODUCTION=1 --bind unix:/home/django/Django-Homeworks/geekshop.sock geekshop.wsgi
+             ├─17239 /home/django/venv/bin/python3 /home/django/venv/bin/gunicorn --access-logfile - --workers 3 --env DJANGO_PRODUCTION=1 --bind unix:/home/django/Django-Homeworks/geekshop.sock geekshop.wsgi
+             ├─17240 /home/django/venv/bin/python3 /home/django/venv/bin/gunicorn --access-logfile - --workers 3 --env DJANGO_PRODUCTION=1 --bind unix:/home/django/Django-Homeworks/geekshop.sock geekshop.wsgi
+             └─17241 /home/django/venv/bin/python3 /home/django/venv/bin/gunicorn --access-logfile - --workers 3 --env DJANGO_PRODUCTION=1 --bind unix:/home/django/Django-Homeworks/geekshop.sock geekshop.wsgi
+
+Mar 18 14:47:42 31-31-203-6.cloudvps.regruhosting.ru systemd[1]: Started gunicorn daemon.
+Mar 18 14:47:42 31-31-203-6.cloudvps.regruhosting.ru gunicorn[17227]: [2021-03-18 14:47:42 +0300] [17227] [INFO] Starting gunicorn 20.0.4
+Mar 18 14:47:43 31-31-203-6.cloudvps.regruhosting.ru gunicorn[17227]: [2021-03-18 14:47:42 +0300] [17227] [INFO] Listening at: unix:/home/django/Django-Homeworks/geekshop.sock (17227)
+Mar 18 14:47:43 31-31-203-6.cloudvps.regruhosting.ru gunicorn[17227]: [2021-03-18 14:47:42 +0300] [17227] [INFO] Using worker: sync
+Mar 18 14:47:43 31-31-203-6.cloudvps.regruhosting.ru gunicorn[17239]: [2021-03-18 14:47:43 +0300] [17239] [INFO] Booting worker with pid: 17239
+Mar 18 14:47:43 31-31-203-6.cloudvps.regruhosting.ru gunicorn[17240]: [2021-03-18 14:47:43 +0300] [17240] [INFO] Booting worker with pid: 17240
+Mar 18 14:47:43 31-31-203-6.cloudvps.regruhosting.ru gunicorn[17241]: [2021-03-18 14:47:43 +0300] [17241] [INFO] Booting worker with pid: 17241
